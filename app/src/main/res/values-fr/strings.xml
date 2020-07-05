@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Password+</string>
+    <string name="webAdresText">Web adresse</string>
+    <string name="usernameText">Nom dutilisateur</string>
+    <string name="exampleUserText">Par exemple, george</string>
+    <string name="passwordText">mot de passe</string>
+    <string name="passwordText_2">mot de passe:</string>
+    <string name="saveText">Terminé</string>
+    <string name="delText">supprimer</string>
+    <string name="generatorText">Générateur de mot de passe</string>
+    <string name="gohomeText">Vers la page principale</string>
+    <string name="passworgHint">Longueur du mot de passe (par défaut 16)</string>
+    <string name="TextChechBox">Caractères spéciaux %, *, ),?, @, #, $, ~</string>
+</resources>

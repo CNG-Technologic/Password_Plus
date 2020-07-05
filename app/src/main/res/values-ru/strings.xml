@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Password+</string>
+    <string name="webAdresText">Веб-адресс</string>
+    <string name="usernameText">Имя пользователя</string>
+    <string name="exampleUserText">Например, george</string>
+    <string name="passwordText">Пароль</string>
+    <string name="passwordText_2">Пароль:</string>
+    <string name="saveText">Готово</string>
+    <string name="delText">Удалить</string>
+    <string name="generatorText">Генератор паролей</string>
+    <string name="gohomeText">На главную</string>
+    <string name="passworgHint">Длина пароля (по умолчанию 16)</string>
+    <string name="TextChechBox">Специальные символы %, *, ),?, @, #, $, ~</string>
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".getData">
+
+    <include
+        android:id="@+id/toolbarGetData"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarGetData"
+        android:layout_marginLeft="23sp"
+        android:layout_marginTop="10sp"
+        android:text="@string/webAdresText" />
+
+    <EditText
+        android:id="@+id/WebBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarGetData"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="31sp"
+        android:layout_marginRight="20sp"
+        android:autoLink="web"
+        android:hint="http://example.ru"
+        android:inputType="textUri"
+        android:textColorLink="@color/MainColor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/WebBox"
+        android:layout_marginLeft="23sp"
+        android:layout_marginTop="10sp"
+        android:text="@string/usernameText" />
+
+    <EditText
+        android:id="@+id/nameBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/WebBox"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="31dp"
+        android:layout_marginRight="20sp"
+        android:hint="@string/exampleUserText"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameBox"
+        android:layout_marginLeft="23sp"
+        android:layout_marginTop="10sp"
+        android:text="@string/passwordText" />
+
+    <EditText
+        android:id="@+id/passwordBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameBox"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="31sp"
+        android:layout_marginRight="20sp"
+        android:hint="@string/passwordText"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordBox"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="21sp"
+        android:layout_marginRight="20sp"
+        android:background="@drawable/button"
+        android:onClick="save"
+        android:shadowColor="#c4c4c4"
+        android:text="@string/saveText"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/delBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saveButton"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="11sp"
+        android:layout_marginRight="20sp"
+        android:background="@drawable/button"
+        android:onClick="delete"
+        android:shadowColor="#c4c4c4"
+        android:text="@string/delText"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/copyBtnNameBox"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nameBox"
+        android:layout_alignRight="@+id/nameBox"
+        android:layout_alignBottom="@+id/nameBox"
+        android:layout_marginTop="-13dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/button"
+        android:onClick="OnNameBtnCopyClick"
+        app:srcCompat="@drawable/ic_copy_white" />
+
+    <ImageButton
+        android:id="@+id/copyBtnPasswordBox"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/passwordBox"
+        android:layout_alignRight="@+id/passwordBox"
+        android:layout_alignBottom="@+id/passwordBox"
+        android:layout_marginTop="-13dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/button"
+        android:onClick="OnPasswordBntCopyClick"
+        app:srcCompat="@drawable/ic_copy_white" />
+
+    <ImageButton
+        android:id="@+id/goInternet"
+        android:layout_width="45sp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/WebBox"
+        android:layout_alignRight="@+id/WebBox"
+        android:layout_alignBottom="@+id/WebBox"
+        android:layout_marginTop="-13dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/button"
+        android:onClick="OnGoInternetBtnClick"
+        app:srcCompat="@drawable/ic_launch" />
+
+</RelativeLayout>
